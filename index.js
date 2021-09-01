@@ -165,7 +165,7 @@ function generateTeam(userTeam) {
                 <div id='card-body'>
                     <div>
                         <p>ID: ${manager.getId()}</p>
-                        <p>Email: ${manager.getEmail()}</p>
+                        <p>Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></p>
                         <p>Office Number: ${manager.getOffice()}</p>
                     </div>
                 </div>
@@ -182,8 +182,8 @@ function generateTeam(userTeam) {
                 <div id='card-body'>
                     <div>
                         <p>ID: ${engineer.getId()}</p>
-                        <p>Email: ${engineer.getEmail()}</p>
-                        <p>Github: ${engineer.getGithub()}</p>
+                        <p>Email: <a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></p>
+                        <p>Github: <a href="https://github.com/${engineer.getGithub()}" target='_blank'>${engineer.getGithub()}</a></p>
                     </div>
                 </div>
             </div>`;
@@ -199,7 +199,7 @@ function generateTeam(userTeam) {
                 <div id='card-body'>
                     <div>
                         <p>ID: ${intern.getId()}</p>
-                        <p>Email: ${intern.getEmail()}</p>
+                        <p>Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></p>
                         <p>School: ${intern.getSchool()}</p>
                     </div>
                 </div>

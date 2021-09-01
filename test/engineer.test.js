@@ -1,5 +1,4 @@
 const { expect, it } = require('@jest/globals');
-const index = require('../index.js');
 const Engineer = require('../lib/engineer')
 
 describe('Engineer', () => {
